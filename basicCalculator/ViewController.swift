@@ -17,19 +17,34 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
     @IBAction func sumClicked(_ sender: Any) {
-        let firstNum = Int(firstText.text!)!
-        let secondNum = Int(secondText.text!)!
-        resultLabel.text = String(firstNum + secondNum)
-        
+        if let firstNum = Int(firstText.text!){
+            if let secondNum = Int(secondText.text!){
+                resultLabel.text = String(firstNum + secondNum)
+            }
+        }
     }
     
     @IBAction func minusClicked(_ sender: Any) {
+        if let firstNum = Int(firstText.text!){
+            if let secondNum = Int(secondText.text!){
+                resultLabel.text = String(firstNum - secondNum)
+            }
+        }
     }
     @IBAction func multiplyClicked(_ sender: Any) {
+        if let firstNum = Int(firstText.text!){
+            if let secondNum = Int(secondText.text!){
+                resultLabel.text = String(firstNum * secondNum)
+            }
+        }
     }
     @IBAction func divideClicked(_ sender: Any) {
+        if let firstNum = Int(firstText.text!){
+            if let secondNum = Int(secondText.text!){
+                resultLabel.text = String(firstNum / secondNum)
+            }
+        }
     }
 }
 
